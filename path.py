@@ -73,7 +73,6 @@ class Path():
 # Pathways as they pass through the brain
 # worker creates a local copy of a Path and is run
 # in multiple Processes
-# The way the brain works
 class Worker(Path):
     def __init__(self):
         Path.__init__(self)

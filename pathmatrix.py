@@ -4,7 +4,7 @@
 
 # The PathMatrix class represents a 3D matrix of machine laerning modules each comprised of a neural net with its internal
 # neurons
-# it would be efficient if the path-matrix grew with the amount that it learnt
+# - It would be efficient if the path-matrix grew with the amount that it learnt
 
 class PathMatrix():
 
@@ -46,10 +46,6 @@ class PathMatrix():
     def return_control_path(self):
         raise NotImplementedError
 
-    #
-    def forward(self):
-        raise NotImplementedError
-
     # Takes a 'snapshot' of the pathmatrix in it's current form
     # so that it can be saved .etc
     def snapshot(self):
@@ -61,4 +57,24 @@ class PathMatrix():
 
     #loads a saved model
     def load(self):
+        raise NotImplementedError
+
+# ======================================================================================================================>
+# Selector
+# ======================================================================================================================>
+# In recognition of the way the brain works, it is generally no the case that pathways are dynamically selected
+# against one another with the best fitness. Pathways that are utilized and thus trained more often for a specific task
+# become fitter and hence prevail over ones that are less well adjusted for a specific task. It would be more efficient
+# for a batch selection process to occur whereby the entirety of the pathmatrix is trained and the selection.
+# Provided the use of the selector is turned on -> at the end of each cycle a set of pathways with the least fitness is
+# batch mutated.
+
+class Selector():
+    def __init__(self):
+        raise NotImplementedError
+
+    def get_weak(self):
+        raise NotImplementedError
+
+    def select(self):
         raise NotImplementedError
