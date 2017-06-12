@@ -14,7 +14,8 @@ class Module():
     def execute(self):
         raise NotImplementedError
 
-    #
+    # This function switches a bool value
+    # True -> False, False -> True
     def switch_active(self):
         raise NotImplementedError
 

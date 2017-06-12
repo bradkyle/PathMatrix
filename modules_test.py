@@ -5,6 +5,9 @@ import unittest
 
 class ModuleTest(unittest.TestCase):
 
+    def test_exec_import(self):
+        raise NotImplementedError
+
     def test_execute(self):
         raise NotImplementedError
 
