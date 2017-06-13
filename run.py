@@ -7,8 +7,38 @@
 # Load model/'s, Save model/'s .etc
 # Create dirs
 # Can even be used to run a genetic algorithm on the PathMatrix itself.
-# sets the nature of the selection i.e. batch or pair selection
+# Sets the nature of the selection i.e. batch or pair selection.
 
 class Run():
+    # Set the number of workers, model path
     def __init__(self):
         raise NotImplementedError
+        #place run code in init
+
+    # takes in config set in init and runns the pathnet
+    def run(self):
+        raise NotImplementedError
+
+    # setup all the workers with their respective
+    # arguments before they are run in run
+    def setup_workers(self):
+        raise NotImplementedError
+
+    # create all directories if they don't already exist
+    def setup_dirs(self):
+        raise NotImplementedError
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -5,8 +5,7 @@
 # arguments are set here:
 
 def main():
-    # Load config: Initialize arguments and constants, load config, set visualizer, set optimizer .etc
-    # Set Environment
+    # Load config: Initialize arguments and constants, load config, set visualizer, set optimizer, set environment .etc
     # Run PathMatrix in whatever manner
     raise NotImplementedError
 

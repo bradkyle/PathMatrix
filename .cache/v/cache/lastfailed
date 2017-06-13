@@ -1,0 +1,5 @@
+{
+  "run_test.py::RunTest::test_run": true,
+  "run_test.py::RunTest::test_setup_dirs": true,
+  "run_test.py::RunTest::test_setup_workers": true
+}

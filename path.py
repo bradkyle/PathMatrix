@@ -77,4 +77,6 @@ class Worker(Path):
     def __init__(self):
         Path.__init__(self)
         raise NotImplementedError
-
+        #print starting worker .etc
+        #while not coord.should_stop():
+            #while is_done == False # continue while the env episode is not done

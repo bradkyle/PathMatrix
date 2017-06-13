@@ -51,6 +51,11 @@ class DeepmindLabEnv(Env):
 
 # Cryptocurrency trading environment ==============================================================================>
 class CryptoTradeEnv(Env):
+    # The trading implementations mainly implement 3 actions (buy, hold, sell) * currency count * exchange count
+    # The currencies and exchanges can be dynamically increased/decreased to increase/decrease the workload respectively
+    # The crypto-currency in this instance will receive these configurations from a golang instance which will collect the
+    # data from public sources and exchanges, batch these in episodes and then send them through to this deep learning
+    # algorithm.
     def __init__(self):
         Env.__init__(self)
         raise NotImplementedError
@@ -112,6 +117,12 @@ class AmberEnv(Env):
         Env.__init__(self)
         raise NotImplementedError
 
+# Self Driving Car Environment ==============================================================================================>
+class SelfDrivingCarEnv(Env):
+    def __init__(self):
+        Env.__init__(self)
+        raise NotImplementedError
+
 #======================================================================================================================>
 # Rewards
 #======================================================================================================================>
@@ -123,7 +134,7 @@ class AmberEnv(Env):
 #======================================================================================================================>
 # Actions
 #======================================================================================================================>
-
+#it would be interesting if the actions were dynamically inferred
 
 #======================================================================================================================>
 # State

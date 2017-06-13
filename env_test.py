@@ -3,7 +3,7 @@ import unittest
 # Env Testing
 # ======================================================================================================================>
 
-class Env(unittest.TestCase):
+class EnvTest(unittest.TestCase):
 
     def test_create_env(self):
         raise NotImplementedError
